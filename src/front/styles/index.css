@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts */
+/* Lato Font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+/*  */
+/*Global  */
+h1, h2, h3, h4, h5, h6{
+  cursor: default !important;
+  user-select: none; 
+
+}
+/* Color anaranjado específico para el botón */
+.custom-orange-btn {
+    background-color: #FFA500; /* Color anaranjado */
+    color: #ffffff; /* Texto en blanco */
+    border: none; /* Sin borde */
+}
+
+/* Landing.css */
+.bg-custom {
+    background-image: url('https://img.freepik.com/vector-gratis/diseno-logotipo-escuela-secundaria-degradado_23-2149626932.jpg?w=740&t=st=1724210810~exp=1724211410~hmac=5272c9cab4973c1e81e8d752994e4a23dd36a56a3f4dcdd0e094615a0b67d120');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Clase personalizada para la tarjeta de login */
+.login-card {
+  border-radius: 15px; /* Bordes redondeados para el efecto cilíndrico */
+  border: 2px solid #3498db; /* Borde azul */
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: all 0.3s ease-in-out; /* Animación suave para hover */
+}
+
+/* Efecto animado al pasar el mouse */
+.login-card:hover {
+  transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  border-color: #1e90ff; /* Cambia el color del borde al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efecto de sombra más intenso */
+}
+
+.shadow-custom {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Menu Scroll bar */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Para navegadores basados en Webkit (Chrome, Safari) */
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Para IE y Edge */
+}
+
+/* Dashboard */
+.dashboard-container {
+  height: 250px;
+  width: 500px;
+}
+
+
+/* Related Class Level Request */
+
+.requests-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espaciado entre secciones */
+  padding: 20px;
+  max-width: 800px; /* Ancho máximo para centrado */
+  margin: auto; /* Centrar horizontalmente */
+}
+  
+.request-section {
+  background-color: #f9f9f9; /* Color de fondo suave */
+  border: 1px solid #e0e0e0; /* Borde ligero */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+.section-title {
+  font-size: 1.5rem; /* Tamaño de fuente más grande */
+  color: #333; /* Color del texto */
+  margin-bottom: 10px; /* Espaciado debajo del título */
+  border-bottom: 2px solid #ff5722; /* Línea de separación */
+  padding-bottom: 5px; /* Espaciado para la línea */
+}
+
+.no-requests-message {
+  color: #666; /* Color del mensaje */
+  font-style: italic; /* Estilo en cursiva */
+  text-align: center; /* Centramos el texto */
+  margin-top: 10px; /* Espaciado superior */
+}
+
